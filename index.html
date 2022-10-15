@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- == CSS Files == -->
+    <link rel="stylesheet" href="css/style.css">
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&family=Silkscreen&display=swap" rel="stylesheet">
+<!-- == === == === == -->
+ <!-- style switcher-->
+ <link rel="stylesheet" href="css/skins/color-1.css" class="alternate-style" title="color-1" >
+ <link rel="stylesheet" href="css/skins/color-2.css" class="alternate-style" title="color-2" disabled>
+ <link rel="stylesheet" href="css/skins/color-3.css" class="alternate-style" title="color-3" disabled>
+ <link rel="stylesheet" href="css/skins/color-4.css" class="alternate-style" title="color-4" disabled>
+ <link rel="stylesheet" href="css/skins/color-5.css" class="alternate-style" title="color-5" disabled>
+ <link rel="stylesheet" href="css/style-switcher.css">
+    <title>Personal Portfolio</title>
+</head>
+<body>
+    <aside>
+        <div class="logo"><a href="#"><span>Marcos</span></a></div>
+        <div class="toggler"><span></span></div>
+        <nav id="nav">
+            <ul>
+                <li><a href="#home" class="active"><i class="fa fa-home"></i> Home</a></li>
+                <li><a href="#sobre"><i class="fa fa-user"></i> Sobre</a></li>
+                <li><a href="#serviços"><i class="fa fa-list"></i> Serviços</a></li>
+                <li><a href="#portfolio"><i class="fa fa-briefcase"></i>  Portfolio</a></li>
+                <li><a href="#contato"><i class="fa fa-comments"></i> Contato</a></li>
+            </ul>
+        </nav>
+
+    </aside>
+    <main>
+        <section class="home-container" id="home">
+            <section class="home-info">
+                <h3 class="hello">Hey! meu nome é <span class="name">Marcos Santos</span></h3>
+                <h3 class="profession">Estou construindo minha carreira como <span class="typing">Dev!</span></h3>
+                <p>Comecei no ano de 2022, muito animado com todo o universo de web designer e programação.</p>
+                <a href="#contato" class="btn hire-me">Entre em contato comigo!</a>
+            </section>
+            <div class="img" onsize="size()">
+                <img src="./imagens/me.png" alt="me">
+            </div>
+        </section>
+        <section class="about-container" id="sobre">
+            <h2>Sobre mim</h2>
+            <section class="about-content">
+                <article class="about-text">
+                    <h3>Eu sou Marcos Santos <span>Desenvolvedor Web</span></h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto odio similique rerum voluptate iure, quibusdam eum hic optio laborum sunt quas velit nobis consequuntur ipsam, quisquam at ipsa accusamus. Voluptatem!</p>
+                </article>
+                <article class="info pad-15">
+                    <div>
+                        <ul class="list-info">
+                            <li>Aniversário:<span> 03 jul 2002</span></li>
+                            <li>Idade:<span> 20 anos</span></li>
+                            <li><a href="https://github.com/marcos-acs" target="_blank">Github: <span>Marcos-acs</span></a></li>
+                            <li><a href="mailto:marcosanttos.ac@gmail.com" target="_blank">Email: <span>marcosanttos.ac@gmail.com</span></a></li>
+                            <li>Cidade/Pais: <span>São paulo | Brasil</span></li>
+                        </ul>
+                    </div>
+                    <div class="container-btn">
+                        <a href="#contato" class="btn hire-me">Contate-me</a>
+                    </div>
+                    <div>
+                        <h3>Tenho conhecimento em:</h3>
+                        <ul class="list-skills">
+                            <li><span>Css</span></li>
+                            <li><span>Html</span></li>
+                            <li><span>JavaScript</span></li>
+                        </ul>
+                    </div>
+                <article>
+            </section> 
+        </section>
+        <section class="portfolio-container" id="portfolio">
+            <h2>Portfolio</h2>
+            <section class="portfolio-content">
+                <article>
+                    <h2>Meus últimos projetos:</h2>
+                    <div class="container-items">
+                        <div class="portfolio-item">
+                            <img src="imagens/portfolio/nft-shop.png" alt="nft-shop">
+                        </div>
+                        <div class="portfolio-item">
+                            <img src="imagens/portfolio/nft-shop.png" alt="img-1">
+                        </div>          
+                        <div class="portfolio-item">
+                            <img src="imagens/portfolio/nft-shop.png" alt="img-1">         
+                        </div>
+                        <div class="portfolio-item">
+                            <img src="imagens/portfolio/nft-shop.png" alt="img-1">
+                        </div>
+                        <div class="portfolio-item">
+                            <img src="imagens/portfolio/nft-shop.png" alt="img-1">
+                        </div>
+                </article>
+            </section>
+        </section>
+        <section class="contact-container" id="contato">
+            <h2>Entre em contato</h2>
+            <section class="contact-content">
+                <h3>Você tem alguma pergunta?</h3>
+                <h4>Entre em contato por aqui:</h4>
+                <article class="info-contact">
+                    <ul>
+                        <li>
+                            <i class="fa-solid fa-envelope"></i>
+                            <h4>E-mail:</h4>
+                            <p>marcosanttos.ac@gmail.com</p>
+                        </li>
+                        <li>
+                            <i class="fa-brands fa-github"></i> 
+                            <h4>GitHub:</h4>
+                            <p>marcos-acs</p>
+                        </li>
+                        <li>
+                            <i class="fa-brands fa-instagram"></i> 
+                            <h4>Instagram:</h4>
+                            <p>Marcosacs</p>
+                        </li>
+                    </ul>
+                </article>
+                    <div class="form">
+                        <form action="email" method="post" >
+                            <fieldset>
+                                <legend>Envie uma mensagem</legend>
+                                <label for="txtname">Nome
+                                <input type="name" name="txtname" id="txtname" placeholder="Nome"></label>
+                                <label for="textemail">Email:
+                                <input type="email" name="txtmail" id="txtemail" placeholder="Email" autocomplete="email"></label>
+                                <textarea name="text" id="msg" maxlength="150" wrap="soft"  placeholder="Digite sua dúvida"></textarea>
+                                <button type="submit" class="btn">Enviar</button>
+                            </fieldset>
+                        </form>
+                    </div>
+            </section>
+        </section>
+    </main>
+        <div class="style-switcher">
+            <div class="style-switcher-toggler s-icon">
+                <i class="fas fa-cog fa-span"></i>
+            </div>
+            <div class="day-night s-icon" onclick="move()">
+                <i class="fas fa-moon"></i>
+            </div>
+            <h4>Temas</h4>
+            <div class="colors">
+                <span class="color-1" onclick="setActiveStyle('color-1')"></span>
+                <span class="color-2" onclick="setActiveStyle('color-2')"></span>
+                <span class="color-3" onclick="setActiveStyle('color-3')"></span>
+                <span class="color-4" onclick="setActiveStyle('color-4')"></span>
+                <span class="color-5" onclick="setActiveStyle('color-5')"></span>
+            </div>
+        </div>
+<!-- === JS Files === -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" referrerpolicy="no-referrer"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
