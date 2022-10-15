@@ -1,7 +1,7 @@
 // typed  
 
 var typed = new Typed(".typing", {
-strings:["", "Dev!", "Web Design.", "Web Developer.", "Graphic Design."],
+strings:["", "Web Design.", "Web Developer.", "Graphic Design."],
     typeSpeed: 100,
     BackSpeed: 80,
     loop: true
@@ -54,9 +54,28 @@ window.addEventListener("load", () => {
 
 // ASIDE 
 
-const nav = document.querySelector("#nav");
-    navList = nav.getElementsByTagName("ul");
-totalNavList = navlist.length;
-for(let i=0; i<totalNavaList; i++){
-    console.log(navList[i])
-}
+const nav = document.querySelector("#nav"); //ul
+    navList = nav.querySelectorAll("li");
+    totalNavList = navList.length;
+    for(let i=0; i<totalNavList; i++){
+        const a= navList[i].querySelector("a");
+        a.addEventListener("click", function(){
+            for(let j=0; j,totalNavList; j++){
+                this.classList.add("active");
+                navList[j].querySelector("a").classList.remove("active");
+                showSection(this);
+            }     
+        })
+    }
+
+
+
+
+/*
+ if (a.value != "active"){
+                this.classList.add("active");
+                
+            } else {
+                this.classList.remove("active");
+            }
+*/

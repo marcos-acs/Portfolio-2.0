@@ -125,7 +125,7 @@ aside {
     cursor: pointer;
   
     position: fixed;
-    left: 200px;
+    left: 400px;
     top: 20px;
 
     border-radius: 5px;
@@ -145,17 +145,17 @@ aside {
 
 .toggler > span::before {
     content: '';
-    height: 2px;
+    height: 3px;
     width: 18px;
     background-color: var(--skin-color);
     position: absolute;
-    top: -6px;
+    top: -7px;
     left: 0;
 }
 
 .toggler > span::after {
     content: '';
-    height: 2px;
+    height: 3px;
     width: 18px;
     background-color: var(--skin-color);
     position: absolute;
@@ -198,10 +198,16 @@ i.fa {
 
 section {
     width: 100%;  
-    padding: 10px 30px;
+    padding: 10px 70px;
     margin-top: 30px;
     margin-bottom: 30px;
     color: var(--text-black-900);
+    position: relative;
+    right: 280px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+
 }
 
 .home-container {
@@ -228,7 +234,7 @@ span {
 .profession {
     font-size: 24px;
     margin: 15px 0;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
     max-width: 450px;
 }
 
@@ -367,7 +373,6 @@ section > h2::after {
 }
 
 .info {
-    flex: 10px 10px 100%;
     max-width: 100%;
     font-weight: 700;
     display: flex;
@@ -382,7 +387,7 @@ section > h2::after {
 }
 
 .list-info > li > a > span, .list-info > li > span {
-    font-size: 16px;
+    font-size: 15px;
 }
 
 .list-info > li {
@@ -433,20 +438,24 @@ section > h2::after {
 
 .portfolio-item {
     border-radius: 10px;
-    border: 6px solid var(--text-black-700);
-    width: 400px;
+    width: 390px;
     align-self: center;
     margin: 10px;
+    background-color: var(--bg-black-100);
 
     box-shadow: .8px 1px 7px rgba(0, 0, 0, 0.292);
-    background-color: var(7);
     overflow: hidden;
     cursor: pointer;
 }
 
+
 .portfolio-item > img {
-    width: 100%;
-    border-radius: 3px;
+    border-radius: 10px;
+}
+
+.portfolio-item:hover {
+    transform: scale(1.1);
+    transition: 3s ease-in-out;
 }
 
 /* === end portfolio section ===*/
@@ -456,10 +465,10 @@ section > h2::after {
 .contact-content {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     text-align: center;
-    margin-top: 60px;
-    height: auto;
+    margin-top: 70px;
+    height: 700px;
 }
 
 .contact-content > h3 {
@@ -511,13 +520,12 @@ fieldset {
     column-gap: 50px;
     row-gap: 15px;
     flex-wrap: wrap;
-    height: 200px;
+    height: 300px;
     padding: 10px;
 }
 
 fieldset > legend {
     font-size: 20px;
-
 }
 
 #txtemail, #txtname, #msg {
@@ -526,14 +534,10 @@ fieldset > legend {
     border-radius: 10px;
     background-color: var(--bg-black-100);
     border: 1px solid var(--bg-black-50);
-    padding: 10px 25px;
+    padding: 18px 25px;
     font-size: 16px;
     color: var(--text-black-700);
     transition: all .3s ease;
-}
-
-#txtemail, #msg:focus {
-    box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
 }
 
 #msg {
@@ -542,6 +546,10 @@ fieldset > legend {
     resize: none;
 }
 
+fieldset > .btn {
+    margin: auto;
+    text-align: center;
+}
 
 /*==== media ====*/
 @media (max-width: 1199px)
@@ -552,7 +560,7 @@ fieldset > legend {
     }
 
     aside {
-        display: none;
+        left: -40;
     }
 
     main {
@@ -568,6 +576,18 @@ fieldset > legend {
     .home-container {
         height: 800px;
     }
+
+    
+    .toggler {
+        left: 400px;
+        top: 20px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+  
 }
 
 @media (max-width: 991px) {
@@ -580,6 +600,30 @@ fieldset > legend {
         width: 100%;
     }
 
+    .hello, .profession, .home-info > p {
+        width: 300px;
+    }
+
+    .home-info > h3 {
+        font-size: 27px;
+    }
+
+    .contact-content, .about-content, .home-container, section {
+        padding: 12px;
+    }
+
+    .list-skills > li > span{
+        font-size: 25px;
+    }
+
+    .typing {
+        font-size: 20px;
+    }
+
+    .portfolio-item:hover {
+        transform: scale(.9);
+        transition: 3s ease-in-out;
+    }
 }
 
 
