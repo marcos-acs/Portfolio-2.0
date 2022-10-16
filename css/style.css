@@ -625,4 +625,13 @@ fieldset > .btn {
 
 
 
-
+.portfolio-item::after {
+    content: 'Em desenvolvimento';
+    padding-left: 100px;
+    height: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bolder;
+    font-size: 22px;
+    color: var(--text-black-900);
+    background-color: ;
+}
