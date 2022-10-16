@@ -119,16 +119,15 @@ aside {
 /*=== toggler icon start ===*/
 
 .toggler {
-    height: 35px;
+    height: 40px;
     width: 40px;
     border: 1px solid var(--skin-color);
     cursor: pointer;
   
     position: fixed;
-    left: 400px;
-    top: 20px;
+    
 
-    border-radius: 5px;
+    border-radius: 50px;
     background-color: var(--bg-black-100);
 
     display: none;
@@ -149,7 +148,7 @@ aside {
     width: 18px;
     background-color: var(--skin-color);
     position: absolute;
-    top: -7px;
+    top: -6px;
     left: 0;
 }
 
@@ -159,7 +158,7 @@ aside {
     width: 18px;
     background-color: var(--skin-color);
     position: absolute;
-    top: 7px;
+    top: 6px;
     left: 0;
 }
 
@@ -202,11 +201,6 @@ section {
     margin-top: 30px;
     margin-bottom: 30px;
     color: var(--text-black-900);
-    position: relative;
-    right: 280px;
-    top: 0;
-    left: 0;
-    bottom: 0;
 
 }
 
@@ -560,7 +554,7 @@ fieldset > .btn {
     }
 
     aside {
-        left: -40;
+        left: -400px;
     }
 
     main {
@@ -579,14 +573,17 @@ fieldset > .btn {
 
     
     .toggler {
-        left: 400px;
-        top: 20px;
+        left: 15px;
+        top: 9px;
 
         display: flex;
         justify-content: center;
         align-items: center;
     }
 
+    .open {
+        left: 0px;
+    }
   
 }
 

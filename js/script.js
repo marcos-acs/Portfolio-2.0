@@ -39,6 +39,7 @@ function setActiveStyle(color) {
 // theme light and dark mode 
 
 const dayNight = document.querySelector(".day-night");
+const body = document.getElementsByTagName("body");
 dayNight.addEventListener("click", () => {
     dayNight.querySelector("i").classList.toggle("fa-sun");
     dayNight.querySelector("i").classList.toggle("fa-moon");
@@ -63,12 +64,32 @@ const nav = document.querySelector("#nav"); //ul
             for(let j=0; j,totalNavList; j++){
                 this.classList.add("active");
                 navList[j].querySelector("a").classList.remove("active");
-                showSection(this);
             }     
         })
     }
 
 
+
+// toggle
+
+const toggle = document.querySelector(".toggler");
+    const aside = document.querySelector("aside");
+    toggle.addEventListener("click", function(){
+        if(!aside.classList.contains("open")){
+            aside.classList.add("open");
+        } else {
+            aside.classList.remove("open");
+        }
+    })
+
+    
+
+
+/*
+const toggle = document.querySelector(".toggler");
+const aside = document. querySelector("aside"); 
+console.log(aside.contains(toggle));
+*/
 
 
 /*

@@ -76,10 +76,14 @@
 .color-4 { background-color: #B4DC7F}
 .color-5 { background-color: #ff05d9}
 
-@media (max-width: 991px) {
+@media (max-width: 1000px) {
+
+}
+
+@media (max-width: 501px) {
 
     .style-switcher {
-        left: 140px;
+        left: 100px;
         top: 0px;
         padding: 12px;
     }
